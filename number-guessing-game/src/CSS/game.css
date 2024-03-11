@@ -1,0 +1,102 @@
+/* NumberGuessingGame.css */
+
+.number-guessing-container {
+    text-align: center;
+    padding: 90px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    height: 60vh;
+    background: url("../Assets/Designer.jpeg") center/cover;
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    position: fixed; /* Fixed position to keep it centered during scrolling */
+    top: 50%; /* Center from the top */
+    left: 50%; /* Center from the left */
+    transform: translate(-50%, -50%); /* Adjust for half of the container's size */
+  }
+
+  .background {
+     background-color: rgb(255, 255, 255);
+     padding: 20px;
+        border-radius: 10px;
+  }
+  
+  
+  
+  .generate-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .blur-background {
+    filter: blur(3px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .locked-icon {
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+  
+  .lock-svg {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .random-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+  }
+  
+  .input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .guess-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .guess-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .feedback-slider {
+    height: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: black;
+  }
+  
